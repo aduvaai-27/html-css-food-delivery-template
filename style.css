@@ -158,8 +158,9 @@ body {
 .motto {
   position: absolute;
   top: 580px;
-  left: 110px;
+  left: 75px;
   color: white;
+  font-size: 1.3em;
 }
 
 .offer {
@@ -169,7 +170,8 @@ body {
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  background-color: rgb(134, 6, 6);
+  background: linear-gradient(rgb(112, 4, 4));
+  perspective: 1000px;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -178,6 +180,7 @@ body {
   font-family: "Indie Flower", cursive;
   font-weight: 400;
   font-style: normal;
+ 
 }
 .offer:hover {
   transform: scale(1.05);
@@ -291,11 +294,14 @@ body {
   cursor: pointer;
   transform: scale(1.2);
   background-color: black;
-  box-shadow: 0 0 70px white;
-  z-index: 30;
+  box-shadow: 0 0 40px white;
+  z-index: 160;
   font-size: scale(1.22);
-  border: 2px solid white;
+  border: 2px solid rgb(241 142 20);
 }
+
+
+
 
 .line h4 a {
   text-decoration: none;
@@ -542,3 +548,116 @@ aside a:hover {
   align-items: center;
   justify-content: center;
 }
+
+.extra h4{
+  font-size: 2.5em;
+  line-height: 1.2em;
+  color: black;
+
+}
+
+h4>span{
+  position: relative;
+  display: inline-block;
+  height: 1.5em;
+  vertical-align: bottom;
+  overflow: hidden;
+  
+}
+
+h4>span>span{
+  display: block;
+  color: rgb(241, 142, 20) ;
+  animation: words 5s infinite ease;
+  padding:0.1em;
+}
+@keyframes words{
+  0%{
+    transform: translateY(0%);
+  }
+
+  20%{
+    transform: translateY(-100%);
+  }
+
+  40%{
+    transform: translateY(-200%);
+  }
+
+  60%{
+    transform: translateY(-300%);
+  }
+
+  80%{
+    transform: translateY(-400%);
+  }
+  100%{
+    transform: translateY(-500%);
+  }
+
+}
+
+.extra{
+  position: absolute;
+  top: 40.7rem;
+  left: 35.7rem;
+  
+}
+
+.n{
+  position: absolute;
+  bottom: 5rem;
+  right: 0rem;
+  
+  top:5rem;
+  
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 90vh;
+  width: 30rem;
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.k{
+  margin: 30px;
+  
+
+}
+.k p{
+  color: white;
+  width: 100%;
+  max-width: 100%;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  
+  font-size: large;
+
+}
+
+.k h4{
+  color:rgb(241, 142, 20);
+  font-size: x-large;
+  font-style: bold;
+}
+
+.k p b{
+  color:rgb(241, 142, 20) ;
+  font-style: italic bold;
+}
+
+.line {
+  animation: pulse 2s infinite alternate;
+}
+
+
+
+
+
+
+
